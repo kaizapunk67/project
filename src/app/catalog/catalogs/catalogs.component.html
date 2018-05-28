@@ -1,0 +1,32 @@
+<div class="row">
+<div class="col-md-3" *ngFor="let x of newHero">
+  <mat-card >
+      <img mat-card-image [src]="x.image" style="object-fit: cover;width:30%;height:10%;">
+  
+  <mat-card-header>
+    <mat-card-title>{{x.title}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{x.description}}
+    </p>
+  </mat-card-content>
+</mat-card>
+</div>
+</div>
+<!-- <mat-card style="margin:10%" (click)="open(items)">
+    <img mat-card-image [src]="items.image" style="object-fit: cover;width:30%;height:10%;">
+    
+    <mat-card-header>
+        <mat-card-title>{{items.title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+          Manufacturer:{{items.manufacturer}} <br/>
+          Storage:{{items.storage}}<br/>
+          Camera:{{items.camera}}<br/>
+          RS:{{items.price}}
+          </p>
+          
+          </mat-card-content>
+    </mat-card> -->
